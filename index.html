@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graduate Application Portal Workflow Simulation</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <h1>Graduate Application Portal</h1>
+      <p>Workflow Testing and User Documentation Simulation</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card intro-card">
+      <h2>Application Workflow</h2>
+      <p>
+        This simulated portal demonstrates a graduate application workflow with applicant information,
+        document checklist validation, application review, submission confirmation, and Help Desk guidance.
+      </p>
+
+      <div class="progress-wrapper" aria-label="Workflow progress">
+        <div class="progress-step active" id="progress-step-1">1. Applicant Info</div>
+        <div class="progress-step" id="progress-step-2">2. Documents</div>
+        <div class="progress-step" id="progress-step-3">3. Review</div>
+        <div class="progress-step" id="progress-step-4">4. Confirmation</div>
+      </div>
+    </section>
+
+    <section class="card" id="step-applicant">
+      <h2>Step 1: Applicant Information</h2>
+      <form id="applicant-form">
+        <div class="form-grid">
+          <label>
+            First Name
+            <input type="text" id="firstName" placeholder="Amina" required />
+          </label>
+
+          <label>
+            Last Name
+            <input type="text" id="lastName" placeholder="Rahman" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" id="email" placeholder="amina.rahman@example.edu" required />
+          </label>
+
+          <label>
+            Program
+            <select id="program" required>
+              <option value="">Select a program</option>
+              <option value="Computer Science PhD">Computer Science PhD</option>
+              <option value="Computer Science MS">Computer Science MS</option>
+              <option value="Data Science MS">Data Science MS</option>
+              <option value="Cybersecurity MS">Cybersecurity MS</option>
+              <option value="Information Systems MS">Information Systems MS</option>
+            </select>
+          </label>
+
+          <label>
+            Term
+            <select id="term" required>
+              <option value="">Select a term</option>
+              <option value="Fall 2026">Fall 2026</option>
+              <option value="Spring 2027">Spring 2027</option>
+            </select>
+          </label>
+
+          <label>
+            Applicant Type
+            <select id="applicantType" required>
+              <option value="">Select applicant type</option>
+              <option value="Domestic">Domestic</option>
+              <option value="International">International</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="error-message" id="applicant-error" role="alert"></p>
+
+        <div class="button-row">
+          <button type="button" id="to-documents">Continue to Documents</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card hidden" id="step-documents">
+      <h2>Step 2: Required Document Checklist</h2>
+      <p>Select the documents that have been received. International applicants must include English Proficiency.</p>
+
+      <div class="checklist">
+        <label><input type="checkbox" id="docTranscript" /> Transcript</label>
+        <label><input type="checkbox" id="docStatement" /> Statement of Purpose</label>
+        <label><input type="checkbox" id="docRecommendation" /> Recommendation Letters</label>
+        <label><input type="checkbox" id="docResume" /> CV or Resume</label>
+        <label><input type="checkbox" id="docEnglish" /> English Proficiency</label>
+      </div>
+
+      <p class="error-message" id="document-error" role="alert"></p>
+
+      <div class="button-row">
+        <button type="button" class="secondary" id="back-to-applicant">Back</button>
+        <button type="button" id="to-review">Continue to Review</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="step-review">
+      <h2>Step 3: Review Application</h2>
+      <p>Review the application summary before final submission.</p>
+
+      <div id="review-summary" class="summary-box"></div>
+
+      <div class="button-row">
+        <button type="button" class="secondary" id="back-to-documents">Back</button>
+        <button type="button" id="submit-application">Submit Application</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="step-confirmation">
+      <h2>Step 4: Confirmation</h2>
+      <div class="success-box">
+        <h3>Application Submitted</h3>
+        <p id="confirmation-message"></p>
+      </div>
+
+      <div class="button-row">
+        <button type="button" id="start-new-application">Start New Application</button>
+      </div>
+    </section>
+
+    <section class="card support-card">
+      <h2>Help Desk Support Panel</h2>
+      <p>Use this section to simulate a support request related to the application workflow.</p>
+
+      <label>
+        Issue Type
+        <select id="issueType">
+          <option value="Login or Access Issue">Login or Access Issue</option>
+          <option value="Missing Document Question">Missing Document Question</option>
+          <option value="Form Validation Error">Form Validation Error</option>
+          <option value="Application Status Question">Application Status Question</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <label>
+        Issue Description
+        <textarea id="issueDescription" placeholder="Example: The applicant cannot continue because the required document checklist is incomplete."></textarea>
+      </label>
+
+      <button type="button" id="create-ticket">Create Support Note</button>
+
+      <div id="ticket-output" class="ticket-output"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Simulated project for workflow testing, user documentation, and process improvement. No real applicant data is used.</p>
+  </footer>
+
+  <script src="src/app.js"></script>
+</body>
+</html>

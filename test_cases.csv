@@ -1,0 +1,13 @@
+Test Case ID,Workflow Area,Scenario,Steps,Expected Result,Priority,Status
+TC-001,Applicant Information,Required fields validation,Click Continue to Documents with empty fields,Validation message appears and user cannot proceed,High,Pass
+TC-002,Applicant Information,Email validation,Enter invalid email and click Continue to Documents,Invalid email message appears,High,Pass
+TC-003,Applicant Information,Valid applicant information,Enter all required applicant fields and continue,User moves to document checklist step,High,Pass
+TC-004,Document Checklist,Missing required document,Leave transcript unchecked and continue,Missing document message appears,High,Pass
+TC-005,Document Checklist,International applicant English requirement,Select International applicant and leave English Proficiency unchecked,English Proficiency requirement message appears,High,Pass
+TC-006,Document Checklist,Domestic applicant English not required,Select Domestic applicant and leave English Proficiency unchecked,User can continue if all universal documents are received,Medium,Pass
+TC-007,Review Step,Review summary accuracy,Complete applicant and document steps,Review page displays applicant and document details,High,Pass
+TC-008,Submission,Confirmation message,Submit reviewed application,Confirmation message and confirmation ID appear,High,Pass
+TC-009,Navigation,Back button from documents,Click Back on document step,User returns to applicant step,Medium,Pass
+TC-010,Support Panel,Create support note,Enter issue description and click Create Support Note,Support note with ticket ID appears,Medium,Pass
+TC-011,Support Panel,Empty support note validation,Click Create Support Note without description,Error message asks user to enter issue description,Medium,Pass
+TC-012,Reset Workflow,Start new application,Submit application and click Start New Application,Form resets and workflow returns to first step,Medium,Pass
