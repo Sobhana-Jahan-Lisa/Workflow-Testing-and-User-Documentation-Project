@@ -16,8 +16,7 @@ The project includes:
 - Process improvement notes
 
 
-
-This project demonstrates the ability to:
+Features:
 
 - Test web-based workflows
 - Identify form validation and navigation issues
@@ -84,9 +83,6 @@ The script will check whether the application workflow includes important featur
 - Documentation files
 - Test plan and test cases
 
-It will generate updated reports in the `reports/` folder.
 
-## Important Note
 
-This is a simulated portfolio project. It does not use real applicant records, institutional systems, private data, or a live CRM. All names, examples, and workflows are fictional.
 
