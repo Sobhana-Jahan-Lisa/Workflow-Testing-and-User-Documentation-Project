@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a portfolio-ready simulation of workflow testing, user documentation, troubleshooting support, and process improvement for a graduate application portal. It was designed for roles involving CRM support, higher-education technology, Help Desk support, workflow testing, user guide preparation, and operational process improvement.
+This project is a portfolio-ready simulation of workflow testing, user documentation, troubleshooting support, and process improvement for a graduate application portal. 
 
 The project includes:
 
@@ -14,7 +14,6 @@ The project includes:
 - User guide and troubleshooting documentation
 - Bug report template
 - Process improvement notes
-- CV-ready project bullets
 
 
 
@@ -82,7 +81,6 @@ The script will check whether the application workflow includes important featur
 - Validation messages
 - Review step
 - Confirmation message
-- Help Desk guidance
 - Documentation files
 - Test plan and test cases
 
@@ -92,7 +90,3 @@ It will generate updated reports in the `reports/` folder.
 
 This is a simulated portfolio project. It does not use real applicant records, institutional systems, private data, or a live CRM. All names, examples, and workflows are fictional.
 
-## Suggested CV Description
-
-**Workflow Testing and User Documentation Project**  
-Tested a simulated graduate application portal workflow by validating form behavior, document checklist logic, review steps, error handling, and confirmation messages. Prepared QA test cases, bug report templates, user guides, troubleshooting documentation, and process improvement notes to support higher-education technology and CRM workflow operations.
