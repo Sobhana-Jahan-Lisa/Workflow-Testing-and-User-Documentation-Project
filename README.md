@@ -50,7 +50,6 @@ Workflow-Testing-and-User-Documentation/
 │   ├── admin_guide.md
 │   ├── troubleshooting_guide.md
 │   ├── process_improvement_notes.md
-│   └── cv_bullets.md
 ├── reports/
 │   ├── workflow_test_results.csv
 │   └── workflow_test_summary.md
