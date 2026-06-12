@@ -16,7 +16,7 @@ The project includes:
 - Process improvement notes
 - CV-ready project bullets
 
-## Why This Project Is Relevant
+
 
 This project demonstrates the ability to:
 
@@ -28,7 +28,7 @@ This project demonstrates the ability to:
 - Support non-technical users
 - Translate workflow problems into process improvement recommendations
 
-These skills are directly relevant to CRM support, Slate support, admissions operations, and higher-education technology roles.
+
 
 ## Repository Structure
 
